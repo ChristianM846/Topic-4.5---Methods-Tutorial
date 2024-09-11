@@ -9,6 +9,7 @@ namespace Topic_4._5___Methods_Tutorial
         {
             int bugs;
             int choice;
+            string exitChoice;
             bool done = false;
 
             while (done == false)
@@ -57,19 +58,32 @@ namespace Topic_4._5___Methods_Tutorial
                     {
                         Console.WriteLine("NOT READY YET");
                     }
-
-
-
                 }
 
 
 
 
+                Console.WriteLine("Would you like to continue? (y/n)");
 
+                exitChoice = Console.ReadLine().Trim().ToLower();
+
+                while (exitChoice != "y" && exitChoice != "n")
+                {
+                    Console.WriteLine("That is not a valid choice, try again.");
+                    exitChoice = Console.ReadLine().Trim().ToLower();
+                }
+
+                if (exitChoice == "y")
+                {
+                    Console.WriteLine("Okay!");
+                    Console.WriteLine();
+                }
+                else if(exitChoice == "n")
+                {
+                    Console.WriteLine("Okay, goodbye");
+                    done = true;
+                }
             }
-
-
-            
         }
 
         public static void Joke(int numBugs)
