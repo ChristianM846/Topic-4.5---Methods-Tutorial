@@ -17,7 +17,7 @@ namespace Topic_4._5___Methods_Tutorial
                 Console.WriteLine("What would you like to do?");
                 Console.WriteLine();
                 Console.WriteLine("1 - Joke");
-                Console.WriteLine("2 - Ascii");
+                Console.WriteLine("2 - Ascii Art");
 
                 while (!Int32.TryParse(Console.ReadLine().Trim(), out choice) || choice != 1 && choice != 2)
                 {
@@ -51,12 +51,38 @@ namespace Topic_4._5___Methods_Tutorial
                         }
                         else
                         {
-                            Joke(bugs);
+                            ComputerJoke(bugs);
                         }
                     }
                     else if (choice == 2)
                     {
-                        Console.WriteLine("NOT READY YET");
+                        KnockKnock();
+                    }
+                }
+                else if (choice == 2)
+                {
+                    Console.WriteLine("What kind of Ascii art would you like to see?");
+                    Console.WriteLine();
+                    Console.WriteLine("1 - Spiderman");
+                    Console.WriteLine("2 - Charmander");
+                    Console.WriteLine("3 - ???");
+
+                    while (!Int32.TryParse(Console.ReadLine().Trim(), out choice) || choice != 1 && choice != 2 && choice != 3)
+                    {
+                        Console.WriteLine("That is not a valid choice, try again");
+                    }
+
+                    if (choice == 1)
+                    {
+                        DrawSpider();
+                    }
+                    else if (choice == 2)
+                    {
+                        DrawChar();
+                    }
+                    else
+                    {
+                        TrollFace();
                     }
                 }
 
@@ -86,7 +112,7 @@ namespace Topic_4._5___Methods_Tutorial
             }
         }
 
-        public static void Joke(int numBugs)
+        public static void ComputerJoke(int numBugs)
         {
             Console.WriteLine($"{numBugs} little bugs in the code");
             Thread.Sleep(1000);
@@ -95,6 +121,11 @@ namespace Topic_4._5___Methods_Tutorial
             Console.WriteLine($"Fix a bug, run in again,");
             Thread.Sleep(1000);
             Console.WriteLine($"{numBugs + 1} little bugs in the code");
+        }
+
+        public static void KnockKnock()
+        {
+            Console.WriteLine("NOT READY YET");
         }
 
         public static void DrawSpider()
