@@ -48,6 +48,7 @@ namespace Topic_4._5___Methods_Tutorial
                         if (bugs == 0)
                         {
                             Console.WriteLine("Oh, okay... I can't really make a joke about that :(");
+                            Console.WriteLine();
                         }
                         else
                         {
@@ -86,9 +87,6 @@ namespace Topic_4._5___Methods_Tutorial
                     }
                 }
 
-
-
-
                 Console.WriteLine("Would you like to continue? (y/n)");
 
                 exitChoice = Console.ReadLine().Trim().ToLower();
@@ -121,11 +119,26 @@ namespace Topic_4._5___Methods_Tutorial
             Console.WriteLine($"Fix a bug, run in again,");
             Thread.Sleep(1000);
             Console.WriteLine($"{numBugs + 1} little bugs in the code");
+            Console.WriteLine();
         }
 
         public static void KnockKnock()
         {
-            Console.WriteLine("NOT READY YET");
+            Console.WriteLine("Knock Knock!");
+            Console.WriteLine();
+            Thread.Sleep(1000);
+            Console.WriteLine("Who's There?");
+            Console.WriteLine();
+            Thread.Sleep(1000);
+            Console.WriteLine("Doris.");
+            Console.WriteLine();
+            Thread.Sleep(1000);
+            Console.WriteLine("Doris who?");
+            Console.WriteLine();
+            Thread.Sleep(1000);
+            Console.WriteLine("Doris locked, why do you think I'm knocking");
+            Console.WriteLine();
+            Thread.Sleep(1500);
         }
 
         public static void DrawSpider()
@@ -242,8 +255,5 @@ namespace Topic_4._5___Methods_Tutorial
             Console.WriteLine("Eh... What's up doc?");
             Console.WriteLine();
         }
-
-
-
     }
 }
