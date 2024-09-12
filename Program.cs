@@ -65,7 +65,7 @@ namespace Topic_4._5___Methods_Tutorial
                     Console.WriteLine();
                     Console.WriteLine("1 - Spiderman");
                     Console.WriteLine("2 - Charmander");
-                    Console.WriteLine("3 - ???");
+                    Console.WriteLine("3 - Bugs Bunny");
 
                     while (!Int32.TryParse(Console.ReadLine().Trim(), out choice) || choice != 1 && choice != 2 && choice != 3)
                     {
@@ -82,7 +82,7 @@ namespace Topic_4._5___Methods_Tutorial
                     }
                     else
                     {
-                        TrollFace();
+                        DrawBugs();
                     }
                 }
 
@@ -201,27 +201,45 @@ namespace Topic_4._5___Methods_Tutorial
             Console.WriteLine();
         }
 
-        public static void TrollFace()
+        public static void DrawBugs()
         {
-            Console.WriteLine("⠀⠀⠀⠀⠀⠀⢀⣤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⢤⣤⣀⣀⡀⠀⠀⠀⠀⠀⠀");
-            Console.WriteLine("⠀⠀⠀⠀⢀⡼⠋⠀⣀⠄⡂⠍⣀⣒⣒⠂⠀⠬⠤⠤⠬⠍⠉⠝⠲⣄⡀⠀⠀");
-            Console.WriteLine("⠀⠀⠀⢀⡾⠁⠀⠊⢔⠕⠈⣀⣀⡀⠈⠆⠀⠀⠀⡍⠁⠀⠁⢂⠀⠈⣷⠀⠀");
-            Console.WriteLine("⠀⠀⣠⣾⠥⠀⠀⣠⢠⣞⣿⣿⣿⣉⠳⣄⠀⠀⣀⣤⣶⣶⣶⡄⠀⠀⣘⢦⡀");
-            Console.WriteLine("⢀⡞⡍⣠⠞⢋⡛⠶⠤⣤⠴⠚⠀⠈⠙⠁⠀⠀⢹⡏⠁⠀⣀⣠⠤⢤⡕⠱⣷");
-            Console.WriteLine("⠘⡇⠇⣯⠤⢾⡙⠲⢤⣀⡀⠤⠀⢲⡖⣂⣀⠀⠀⢙⣶⣄⠈⠉⣸⡄⠠⣠⡿");
-            Console.WriteLine("⠀⠹⣜⡪⠀⠈⢷⣦⣬⣏⠉⠛⠲⣮⣧⣁⣀⣀⠶⠞⢁⣀⣨⢶⢿⣧⠉⡼⠁");
-            Console.WriteLine("⠀⠀⠈⢷⡀⠀⠀⠳⣌⡟⠻⠷⣶⣧⣀⣀⣹⣉⣉⣿⣉⣉⣇⣼⣾⣿⠀⡇⠀");
-            Console.WriteLine("⠀⠀⠀⠈⢳⡄⠀⠀⠘⠳⣄⡀⡼⠈⠉⠛⡿⠿⠿⡿⠿⣿⢿⣿⣿⡇⠀⡇⠀");
-            Console.WriteLine("⠀⠀⠀⠀⠀⠙⢦⣕⠠⣒⠌⡙⠓⠶⠤⣤⣧⣀⣸⣇⣴⣧⠾⠾⠋⠀⠀⡇⠀");
-            Console.WriteLine("⠀⠀⠀⠀⠀⠀⠀⠈⠙⠶⣭⣒⠩⠖⢠⣤⠄⠀⠀⠀⠀⠀⠠⠔⠁⡰⠀⣧⠀");
-            Console.WriteLine("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠛⠲⢤⣀⣀⠉⠉⠀⠀⠀⠀⠀⠁⠀⣠⠏⠀");
-            Console.WriteLine("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠉⠛⠒⠲⠶⠤⠴⠒⠚⠁⠀⠀");
+            Console.WriteLine(".-.");
+            Console.WriteLine("|  \\                                    __");
+            Console.WriteLine("(   `\\                                 /  |");
+            Console.WriteLine(" \\    \\                               /   |");
+            Console.WriteLine("  |  | `\\                            /    /");
+            Console.WriteLine("  |  |\\  \\                         /` /  /");
+            Console.WriteLine("  |  | \\  \\                     ./'  /  /");
+            Console.WriteLine("  |  |  \\  \\                   /   _/|  |");
+            Console.WriteLine("  |  |   \\  \\                /'  _/  |  |");
+            Console.WriteLine("  |  |    \\  \\             /'   /   /   )");
+            Console.WriteLine("  |  (     \\  \\           /    /   /   /");
+            Console.WriteLine("  (   \\     \\  \\         /    /   /   /");
+            Console.WriteLine("   \\   \\     )  )       /    /   /   /");
+            Console.WriteLine("    \\   \\    |  |      /    /   /   /");
+            Console.WriteLine("     \\   \\   |  |     /    /   /   /");
+            Console.WriteLine("      \\   \\  |  |    /    /   /   /");
+            Console.WriteLine("       \\   \\ |  |   (    /   /  /'");
+            Console.WriteLine("        \\   \\|  |   |   /  /' /'");
+            Console.WriteLine("         \\   \\  /`. |`. \\/' /'");
+            Console.WriteLine("          \\     `-;-;-;   /'");
+            Console.WriteLine("           `\\            <");
+            Console.WriteLine("             >  .-\"-.   .-\\");
+            Console.WriteLine("            / .' ,__   `   \\");
+            Console.WriteLine("           |     |  \\      /\\");
+            Console.WriteLine("           |     |__ \\    |_ \\");
+            Console.WriteLine("      _.------.._| o\\ |   |o`|\\_");
+            Console.WriteLine("   ,-`.          `. | |   |  |''`'-._._\r\n");
+            Console.WriteLine("  _.-'.            `:_|.__|/`'.-- - ;_ `");
+            Console.WriteLine(" '   '     ``--.```--.. \\/`..--'''  ; `-.");
+            Console.WriteLine("  .-``.      -.,-..__._.._._.__.   ;`-.");
+            Console.WriteLine(" '    `.        `;   |  | |      .'    `");
+            Console.WriteLine("       `.         `-.|  | |    _'");
+            Console.WriteLine("         `.._     .  `--''`_.-'");
+            Console.WriteLine("             ``--._`-...-'\"");
+            Console.WriteLine("                 ;:    ;");
             Console.WriteLine();
-            Console.WriteLine("You've");
-            Thread.Sleep(1000);
-            Console.WriteLine("Been");
-            Thread.Sleep(1000);
-            Console.WriteLine("TROLLED!");
+            Console.WriteLine("Eh... What's up doc?");
             Console.WriteLine();
         }
 
